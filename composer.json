@@ -57,6 +57,7 @@
   },
   "require-dev": {
     "aaemnnosttv/wp-cli-dotenv-command": "@stable",
+    "aaronreimann/blank-slate": "@dev",
     "rarst/laps": "@stable",
     "wp-cli/entity-command": "@stable",
     "wp-cli/wp-cli": "@stable",
@@ -113,8 +114,6 @@
       "@php -r \"unlink('.env.example');\"",
       "@composer run set-salts"
     ],
-    "pre-install-cmd": "@composer status",
-    "pre-update-cmd": "@composer status",
     "set-salts": "@wp dotenv salts regenerate",
     "wp": "vendor/bin/wp"
   },

@@ -99,6 +99,7 @@
     "wpackagist-plugin/theme-check": "@stable",
     "wpackagist-plugin/user-switching": "@stable",
     "wpackagist-plugin/wp-crontrol": "@stable",
+    "wpscholar/github-archive-installer": "^1.0",
     "wpscholar/mpress-custom-front-page": "@dev",
     "wpscholar/mpress-hide-from-search": "@dev",
     "wpscholar/mpress-image-refresh": "@dev",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "49b04d3425e67eb2a7eba6d16428ea2f",
+    "content-hash": "353b26e24ab81eb0aaf69e7674100296",
     "packages": [
         {
             "name": "composer/installers",
@@ -929,16 +929,16 @@
         },
         {
             "name": "bluehost/endurance-wp-module-gutenframe",
-            "version": "0.1.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bluehost/endurance-wp-module-gutenframe.git",
-                "reference": "5affb465c83dcb8b8c77203e257c852d3d5aa8a5"
+                "reference": "362684ed8da19e1865ccb36500ed376c9dde625e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bluehost/endurance-wp-module-gutenframe/zipball/5affb465c83dcb8b8c77203e257c852d3d5aa8a5",
-                "reference": "5affb465c83dcb8b8c77203e257c852d3d5aa8a5",
+                "url": "https://api.github.com/repos/bluehost/endurance-wp-module-gutenframe/zipball/362684ed8da19e1865ccb36500ed376c9dde625e",
+                "reference": "362684ed8da19e1865ccb36500ed376c9dde625e",
                 "shasum": ""
             },
             "require-dev": {
@@ -969,10 +969,10 @@
             ],
             "description": "A solution for forcing the Block Editor fullscreen and preparing it for <iframe>-ing.",
             "support": {
-                "source": "https://github.com/bluehost/endurance-wp-module-gutenframe/tree/0.1.2",
+                "source": "https://github.com/bluehost/endurance-wp-module-gutenframe/tree/master",
                 "issues": "https://github.com/bluehost/endurance-wp-module-gutenframe/issues"
             },
-            "time": "2019-08-06T17:50:12+00:00"
+            "time": "2020-04-15T21:08:57+00:00"
         },
         {
             "name": "bluehost/endurance-wp-module-loader",
@@ -1129,12 +1129,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bluehost/satis.git",
-                "reference": "8775805e238d4ff0a3dcfe5c1a8923715ae7cf87"
+                "reference": "d554c5ebdea419e4e22eb54fc12abf890227302d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bluehost/satis/zipball/8775805e238d4ff0a3dcfe5c1a8923715ae7cf87",
-                "reference": "8775805e238d4ff0a3dcfe5c1a8923715ae7cf87",
+                "url": "https://api.github.com/repos/bluehost/satis/zipball/d554c5ebdea419e4e22eb54fc12abf890227302d",
+                "reference": "d554c5ebdea419e4e22eb54fc12abf890227302d",
                 "shasum": ""
             },
             "require": {
@@ -1163,7 +1163,7 @@
                 "source": "https://github.com/bluehost/satis/tree/master",
                 "issues": "https://github.com/bluehost/satis/issues"
             },
-            "time": "2020-04-17T17:25:55+00:00"
+            "time": "2020-04-24T00:11:34+00:00"
         },
         {
             "name": "bluehost/wp-php-standards",
@@ -1637,21 +1637,20 @@
         },
         {
             "name": "mojoness/mojo-marketplace-wp-plugin",
-            "version": "dev-master",
+            "version": "dev-fix/sso-static-var-fatal",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mojoness/mojo-marketplace-wp-plugin.git",
-                "reference": "2276016883496275c2a696001063abea63051336"
+                "reference": "97c423614b98c0872d481bef327eb28bb447e1a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mojoness/mojo-marketplace-wp-plugin/zipball/2276016883496275c2a696001063abea63051336",
-                "reference": "2276016883496275c2a696001063abea63051336",
+                "url": "https://api.github.com/repos/mojoness/mojo-marketplace-wp-plugin/zipball/97c423614b98c0872d481bef327eb28bb447e1a2",
+                "reference": "97c423614b98c0872d481bef327eb28bb447e1a2",
                 "shasum": ""
             },
             "require": {
                 "bluehost/endurance-wp-module-business-reviews": "^1.0",
-                "bluehost/endurance-wp-module-gutenframe": "^0.1",
                 "bluehost/endurance-wp-module-loader": "^1.0",
                 "bluehost/endurance-wp-module-spam-prevention": "^1.0",
                 "bluehost/endurance-wp-module-sso": "^1.0",
@@ -1701,7 +1700,7 @@
                 "source": "https://github.com/mojoness/mojo-marketplace-wp-plugin",
                 "issues": "https://github.com/mojoness/mojo-marketplace-wp-plugin/issues"
             },
-            "time": "2020-04-17T17:59:55+00:00"
+            "time": "2019-07-16T09:26:02+00:00"
         },
         {
             "name": "mustache/mustache",
@@ -3157,6 +3156,45 @@
             "homepage": "https://wordpress.org/plugins/wp-crontrol/"
         },
         {
+            "name": "wpscholar/github-archive-installer",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wpscholar/github-archive-installer.git",
+                "reference": "c3e325f345e2ca3e3a110294e8914a747b16150d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wpscholar/github-archive-installer/zipball/c3e325f345e2ca3e3a110294e8914a747b16150d",
+                "reference": "c3e325f345e2ca3e3a110294e8914a747b16150d",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1 || ^2.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "wpscholar\\Composer\\GithubArchiveInstaller"
+            },
+            "autoload": {
+                "psr-4": {
+                    "wpscholar\\Composer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "A custom Composer installer that will install a dependency from a GitHub release archive .zip file when installing from distribution.",
+            "time": "2020-04-24T14:36:31+00:00"
+        },
+        {
             "name": "wpscholar/mpress-custom-front-page",
             "version": "dev-master",
             "source": {
@@ -3288,12 +3326,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpscholar-wp-plugins/random-post-on-refresh.git",
-                "reference": "202865a2794aa2143c7f76838f7fbd074c60cfc4"
+                "reference": "0a140e1237fdc3fe9b9bb9c4e4b0c6a8b9f68abd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpscholar-wp-plugins/random-post-on-refresh/zipball/202865a2794aa2143c7f76838f7fbd074c60cfc4",
-                "reference": "202865a2794aa2143c7f76838f7fbd074c60cfc4",
+                "url": "https://api.github.com/repos/wpscholar-wp-plugins/random-post-on-refresh/zipball/0a140e1237fdc3fe9b9bb9c4e4b0c6a8b9f68abd",
+                "reference": "0a140e1237fdc3fe9b9bb9c4e4b0c6a8b9f68abd",
                 "shasum": ""
             },
             "require-dev": {
@@ -3314,7 +3352,7 @@
             "authors": [
                 {
                     "name": "Micah Wood",
-                    "homepage": "http://wpscholar.com"
+                    "homepage": "https://wpscholar.com"
                 }
             ],
             "description": "Show a random post on every page load.",
@@ -3322,7 +3360,7 @@
                 "source": "https://github.com/wpscholar-wp-plugins/random-post-on-refresh/tree/master",
                 "issues": "https://github.com/wpscholar-wp-plugins/random-post-on-refresh/issues"
             },
-            "time": "2020-04-20T14:48:31+00:00"
+            "time": "2020-04-21T03:29:30+00:00"
         },
         {
             "name": "wpscholar/satis",

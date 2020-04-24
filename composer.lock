@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ef3dd5f2fe0c47485f90f4c364e8ff3",
+    "content-hash": "49b04d3425e67eb2a7eba6d16428ea2f",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,6 +132,72 @@
                 "zikula"
             ],
             "time": "2020-04-07T06:57:05+00:00"
+        },
+        {
+            "name": "dealerdirect/phpcodesniffer-composer-installer",
+            "version": "v0.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dealerdirect/phpcodesniffer-composer-installer.git",
+                "reference": "8001af8eb107fbfcedc31a8b51e20b07d85b457a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dealerdirect/phpcodesniffer-composer-installer/zipball/8001af8eb107fbfcedc31a8b51e20b07d85b457a",
+                "reference": "8001af8eb107fbfcedc31a8b51e20b07d85b457a",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": "^5.3|^7",
+                "squizlabs/php_codesniffer": "^2|^3"
+            },
+            "require-dev": {
+                "composer/composer": "*",
+                "phpcompatibility/php-compatibility": "^9.0",
+                "sensiolabs/security-checker": "^4.1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Franck Nijhof",
+                    "email": "franck.nijhof@dealerdirect.com",
+                    "homepage": "http://www.frenck.nl",
+                    "role": "Developer / IT Manager"
+                }
+            ],
+            "description": "PHP_CodeSniffer Standards Composer Installer Plugin",
+            "homepage": "http://www.dealerdirect.com",
+            "keywords": [
+                "PHPCodeSniffer",
+                "PHP_CodeSniffer",
+                "code quality",
+                "codesniffer",
+                "composer",
+                "installer",
+                "phpcs",
+                "plugin",
+                "qa",
+                "quality",
+                "standard",
+                "standards",
+                "style guide",
+                "stylecheck",
+                "tests"
+            ],
+            "time": "2020-01-29T20:22:20+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -320,6 +386,297 @@
             "time": "2020-02-19T09:02:13+00:00"
         },
         {
+            "name": "phpcompatibility/php-compatibility",
+            "version": "9.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPCompatibility/PHPCompatibility.git",
+                "reference": "9fb324479acf6f39452e0655d2429cc0d3914243"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPCompatibility/PHPCompatibility/zipball/9fb324479acf6f39452e0655d2429cc0d3914243",
+                "reference": "9fb324479acf6f39452e0655d2429cc0d3914243",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "squizlabs/php_codesniffer": "^2.3 || ^3.0.2"
+            },
+            "conflict": {
+                "squizlabs/php_codesniffer": "2.6.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "suggest": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically.",
+                "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
+            },
+            "type": "phpcodesniffer-standard",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Wim Godden",
+                    "homepage": "https://github.com/wimg",
+                    "role": "lead"
+                },
+                {
+                    "name": "Juliette Reinders Folmer",
+                    "homepage": "https://github.com/jrfnl",
+                    "role": "lead"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/PHPCompatibility/PHPCompatibility/graphs/contributors"
+                }
+            ],
+            "description": "A set of sniffs for PHP_CodeSniffer that checks for PHP cross-version compatibility.",
+            "homepage": "http://techblog.wimgodden.be/tag/codesniffer/",
+            "keywords": [
+                "compatibility",
+                "phpcs",
+                "standards"
+            ],
+            "time": "2019-12-27T09:44:58+00:00"
+        },
+        {
+            "name": "phpcompatibility/phpcompatibility-paragonie",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPCompatibility/PHPCompatibilityParagonie.git",
+                "reference": "b862bc32f7e860d0b164b199bd995e690b4b191c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPCompatibility/PHPCompatibilityParagonie/zipball/b862bc32f7e860d0b164b199bd995e690b4b191c",
+                "reference": "b862bc32f7e860d0b164b199bd995e690b4b191c",
+                "shasum": ""
+            },
+            "require": {
+                "phpcompatibility/php-compatibility": "^9.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5",
+                "paragonie/random_compat": "dev-master",
+                "paragonie/sodium_compat": "dev-master"
+            },
+            "suggest": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5 || This Composer plugin will sort out the PHP_CodeSniffer 'installed_paths' automatically.",
+                "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
+            },
+            "type": "phpcodesniffer-standard",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Wim Godden",
+                    "role": "lead"
+                },
+                {
+                    "name": "Juliette Reinders Folmer",
+                    "role": "lead"
+                }
+            ],
+            "description": "A set of rulesets for PHP_CodeSniffer to check for PHP cross-version compatibility issues in projects, while accounting for polyfills provided by the Paragonie polyfill libraries.",
+            "homepage": "http://phpcompatibility.com/",
+            "keywords": [
+                "compatibility",
+                "paragonie",
+                "phpcs",
+                "polyfill",
+                "standards"
+            ],
+            "time": "2019-11-04T15:17:54+00:00"
+        },
+        {
+            "name": "phpcompatibility/phpcompatibility-wp",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPCompatibility/PHPCompatibilityWP.git",
+                "reference": "41bef18ba688af638b7310666db28e1ea9158b2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPCompatibility/PHPCompatibilityWP/zipball/41bef18ba688af638b7310666db28e1ea9158b2f",
+                "reference": "41bef18ba688af638b7310666db28e1ea9158b2f",
+                "shasum": ""
+            },
+            "require": {
+                "phpcompatibility/php-compatibility": "^9.0",
+                "phpcompatibility/phpcompatibility-paragonie": "^1.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5"
+            },
+            "suggest": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5 || This Composer plugin will sort out the PHP_CodeSniffer 'installed_paths' automatically.",
+                "roave/security-advisories": "dev-master || Helps prevent installing dependencies with known security issues."
+            },
+            "type": "phpcodesniffer-standard",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Wim Godden",
+                    "role": "lead"
+                },
+                {
+                    "name": "Juliette Reinders Folmer",
+                    "role": "lead"
+                }
+            ],
+            "description": "A ruleset for PHP_CodeSniffer to check for PHP cross-version compatibility issues in projects, while accounting for polyfills provided by WordPress.",
+            "homepage": "http://phpcompatibility.com/",
+            "keywords": [
+                "compatibility",
+                "phpcs",
+                "standards",
+                "wordpress"
+            ],
+            "time": "2019-08-28T14:22:28+00:00"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "3.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "73e2e7f57d958e7228fce50dc0c61f58f017f9f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/73e2e7f57d958e7228fce50dc0c61f58f017f9f6",
+                "reference": "73e2e7f57d958e7228fce50dc0c61f58f017f9f6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "bin": [
+                "bin/phpcs",
+                "bin/phpcbf"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "time": "2020-04-17T01:09:41+00:00"
+        },
+        {
+            "name": "wp-coding-standards/wpcs",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WordPress/WordPress-Coding-Standards.git",
+                "reference": "b5a453203114cc2284b1a614c4953456fbe4f546"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WordPress/WordPress-Coding-Standards/zipball/b5a453203114cc2284b1a614c4953456fbe4f546",
+                "reference": "b5a453203114cc2284b1a614c4953456fbe4f546",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "squizlabs/php_codesniffer": "^3.3.1"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.5 || ^0.6",
+                "phpcompatibility/php-compatibility": "^9.0",
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "suggest": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.6 || This Composer plugin will sort out the PHPCS 'installed_paths' automatically."
+            },
+            "type": "phpcodesniffer-standard",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/WordPress/WordPress-Coding-Standards/graphs/contributors"
+                }
+            ],
+            "description": "PHP_CodeSniffer rules (sniffs) to enforce WordPress coding conventions",
+            "keywords": [
+                "phpcs",
+                "standards",
+                "wordpress"
+            ],
+            "time": "2020-02-04T02:52:06+00:00"
+        },
+        {
+            "name": "wpscholar/phpcs-standards-wpscholar",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wpscholar/phpcs-standards-wpscholar.git",
+                "reference": "fbbd2ff7ef5e39ca73df01f5cc02b747efc739ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wpscholar/phpcs-standards-wpscholar/zipball/fbbd2ff7ef5e39ca73df01f5cc02b747efc739ad",
+                "reference": "fbbd2ff7ef5e39ca73df01f5cc02b747efc739ad",
+                "shasum": ""
+            },
+            "require": {
+                "dealerdirect/phpcodesniffer-composer-installer": "@stable",
+                "phpcompatibility/php-compatibility": "@stable",
+                "phpcompatibility/phpcompatibility-wp": "@stable",
+                "squizlabs/php_codesniffer": "@stable",
+                "wp-coding-standards/wpcs": "@stable"
+            },
+            "type": "phpcodesniffer-standard",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "PHP Code Sniffer Standards for WP Scholar",
+            "time": "2019-04-30T20:59:44+00:00"
+        },
+        {
             "name": "wpscholar/phpdotenv",
             "version": "1.0.1",
             "source": {
@@ -409,34 +766,441 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aaronreimann/blank-slate.git",
-                "reference": "a5bfaf9691263baf38945a79a03fff430c13e224"
+                "reference": "49185598a187e90c3a8207e50ce69fa443ab0680"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aaronreimann/blank-slate/zipball/a5bfaf9691263baf38945a79a03fff430c13e224",
-                "reference": "a5bfaf9691263baf38945a79a03fff430c13e224",
+                "url": "https://api.github.com/repos/aaronreimann/blank-slate/zipball/49185598a187e90c3a8207e50ce69fa443ab0680",
+                "reference": "49185598a187e90c3a8207e50ce69fa443ab0680",
                 "shasum": ""
             },
+            "require-dev": {
+                "wpscholar/phpcs-standards-wpscholar": "@stable"
+            },
             "type": "wordpress-plugin",
+            "scripts": {
+                "fix": [
+                    "vendor/bin/phpcbf . -s"
+                ],
+                "lint": [
+                    "vendor/bin/phpcs . -s"
+                ]
+            },
             "license": [
                 "GPL-2.0-or-later"
             ],
             "authors": [
                 {
                     "name": "Aaron Reimann",
-                    "email": "aaronr@clockworkwp.com"
+                    "homepage": "https://aaronreimann.com/"
                 },
+                {
+                    "name": "Micah Wood",
+                    "homepage": "http://wpscholar.com"
+                }
+            ],
+            "description": "Provides a blank page template for use with WordPress page builders.",
+            "support": {
+                "source": "https://github.com/aaronreimann/blank-slate/tree/1.1.5",
+                "issues": "https://github.com/aaronreimann/blank-slate/issues"
+            },
+            "time": "2020-04-21T15:51:47+00:00"
+        },
+        {
+            "name": "bluehost/bluehost-site-migrator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bluehost/bluehost-site-migrator.git",
+                "reference": "4e05e7bfa2aa2b438162b6ae1e460696627043a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bluehost/bluehost-site-migrator/zipball/4e05e7bfa2aa2b438162b6ae1e460696627043a7",
+                "reference": "4e05e7bfa2aa2b438162b6ae1e460696627043a7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-zip": "*"
+            },
+            "require-dev": {
+                "bluehost/wp-php-standards": "^1.1"
+            },
+            "type": "wordpress-plugin",
+            "scripts": {
+                "fix": [
+                    "vendor/bin/phpcbf . --standard=Bluehost"
+                ],
+                "lint": [
+                    "vendor/bin/phpcs . --standard=Bluehost -s"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "homepage": "https://wpscholar.com"
+                }
+            ],
+            "description": "A WordPress plugin to help you quickly and easily migrate your website to Bluehost.",
+            "support": {
+                "source": "https://github.com/bluehost/bluehost-site-migrator/tree/master",
+                "issues": "https://github.com/bluehost/bluehost-site-migrator/issues"
+            },
+            "time": "2020-04-24T00:10:21+00:00"
+        },
+        {
+            "name": "bluehost/endurance-wp-module-business-reviews",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bluehost/endurance-wp-module-business-reviews.git",
+                "reference": "05ecf887a98c95642ae845bafd7be5b609304763"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bluehost/endurance-wp-module-business-reviews/zipball/05ecf887a98c95642ae845bafd7be5b609304763",
+                "reference": "05ecf887a98c95642ae845bafd7be5b609304763",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "William Earnhardt",
+                    "email": "william.earnhardt@endurance.com"
+                }
+            ],
+            "description": "Bluehost Business Reviews Integration",
+            "support": {
+                "source": "https://github.com/bluehost/endurance-wp-module-business-reviews/tree/1.0.3",
+                "issues": "https://github.com/bluehost/endurance-wp-module-business-reviews/issues"
+            },
+            "time": "2019-01-08T15:58:33+00:00"
+        },
+        {
+            "name": "bluehost/endurance-wp-module-generator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bluehost/endurance-wp-module-generator.git",
+                "reference": "2d48fc9a95fa949274db9c85ae21db78858772a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bluehost/endurance-wp-module-generator/zipball/2d48fc9a95fa949274db9c85ae21db78858772a5",
+                "reference": "2d48fc9a95fa949274db9c85ae21db78858772a5",
+                "shasum": ""
+            },
+            "require": {
+                "mustache/mustache": "^2.13"
+            },
+            "type": "library",
+            "scripts": {
+                "post-create-project-cmd": [
+                    "@php bootstrap.php"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
                 {
                     "name": "Micah Wood",
                     "email": "micah@wpscholar.com"
                 }
             ],
-            "description": "A blank slate for use with WordPress page builders.",
+            "description": "Endurance WordPress Module Generator",
             "support": {
-                "source": "https://github.com/aaronreimann/blank-slate/tree/master",
-                "issues": "https://github.com/aaronreimann/blank-slate/issues"
+                "source": "https://github.com/bluehost/endurance-wp-module-generator/tree/1.0",
+                "issues": "https://github.com/bluehost/endurance-wp-module-generator/issues"
             },
-            "time": "2020-04-21T03:15:28+00:00"
+            "time": "2020-04-17T00:37:01+00:00"
+        },
+        {
+            "name": "bluehost/endurance-wp-module-gutenframe",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bluehost/endurance-wp-module-gutenframe.git",
+                "reference": "5affb465c83dcb8b8c77203e257c852d3d5aa8a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bluehost/endurance-wp-module-gutenframe/zipball/5affb465c83dcb8b8c77203e257c852d3d5aa8a5",
+                "reference": "5affb465c83dcb8b8c77203e257c852d3d5aa8a5",
+                "shasum": ""
+            },
+            "require-dev": {
+                "bluehost/wp-php-standards": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ],
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "scripts": {
+                "lint": [
+                    "vendor/bin/phpcs . --standard=Bluehost"
+                ],
+                "clean": [
+                    "vendor/bin/phpcbf . --standard=Bluehost"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "David Ryan",
+                    "email": "davidb.ryan@endurance.com"
+                }
+            ],
+            "description": "A solution for forcing the Block Editor fullscreen and preparing it for <iframe>-ing.",
+            "support": {
+                "source": "https://github.com/bluehost/endurance-wp-module-gutenframe/tree/0.1.2",
+                "issues": "https://github.com/bluehost/endurance-wp-module-gutenframe/issues"
+            },
+            "time": "2019-08-06T17:50:12+00:00"
+        },
+        {
+            "name": "bluehost/endurance-wp-module-loader",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bluehost/endurance-wp-module-loader.git",
+                "reference": "a9a384596e26950466f7ffc667e0be29f96c36a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bluehost/endurance-wp-module-loader/zipball/a9a384596e26950466f7ffc667e0be29f96c36a9",
+                "reference": "a9a384596e26950466f7ffc667e0be29f96c36a9",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "includes/"
+                ],
+                "files": [
+                    "module-loader.php"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "An Endurance module that handles registration and management of other modules.",
+            "support": {
+                "source": "https://github.com/bluehost/endurance-wp-module-loader/tree/1.0.3",
+                "issues": "https://github.com/bluehost/endurance-wp-module-loader/issues"
+            },
+            "time": "2019-01-08T16:32:20+00:00"
+        },
+        {
+            "name": "bluehost/endurance-wp-module-spam-prevention",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bluehost/endurance-wp-module-spam-prevention.git",
+                "reference": "a9925e475c94aaa6511c297012bdec1f37335f86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bluehost/endurance-wp-module-spam-prevention/zipball/a9925e475c94aaa6511c297012bdec1f37335f86",
+                "reference": "a9925e475c94aaa6511c297012bdec1f37335f86",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "Bluehost Spam Prevention Module",
+            "support": {
+                "source": "https://github.com/bluehost/endurance-wp-module-spam-prevention/tree/1.0.2",
+                "issues": "https://github.com/bluehost/endurance-wp-module-spam-prevention/issues"
+            },
+            "time": "2020-04-15T20:14:34+00:00"
+        },
+        {
+            "name": "bluehost/endurance-wp-module-sso",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bluehost/endurance-wp-module-sso.git",
+                "reference": "f41f81721a175667cc87973f73a5f7a3d10a79d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bluehost/endurance-wp-module-sso/zipball/f41f81721a175667cc87973f73a5f7a3d10a79d3",
+                "reference": "f41f81721a175667cc87973f73a5f7a3d10a79d3",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "Bluehost Single Sign-on Integration",
+            "support": {
+                "source": "https://github.com/bluehost/endurance-wp-module-sso/tree/1.0.3",
+                "issues": "https://github.com/bluehost/endurance-wp-module-sso/issues"
+            },
+            "time": "2019-09-27T16:00:36+00:00"
+        },
+        {
+            "name": "bluehost/endurance-wp-plugin-updater",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bluehost/endurance-wp-plugin-updater.git",
+                "reference": "3a041ee242eacf93c884c7a709ccf8ffeeeffeac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bluehost/endurance-wp-plugin-updater/zipball/3a041ee242eacf93c884c7a709ccf8ffeeeffeac",
+                "reference": "3a041ee242eacf93c884c7a709ccf8ffeeeffeac",
+                "shasum": ""
+            },
+            "require": {
+                "pimple/pimple": "^3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Endurance_WP_Plugin_Updater\\": ""
+                }
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/bluehost/endurance-wp-plugin-updater/tree/master",
+                "issues": "https://github.com/bluehost/endurance-wp-plugin-updater/issues"
+            },
+            "time": "2020-04-15T20:21:26+00:00"
+        },
+        {
+            "name": "bluehost/satis",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bluehost/satis.git",
+                "reference": "8775805e238d4ff0a3dcfe5c1a8923715ae7cf87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bluehost/satis/zipball/8775805e238d4ff0a3dcfe5c1a8923715ae7cf87",
+                "reference": "8775805e238d4ff0a3dcfe5c1a8923715ae7cf87",
+                "shasum": ""
+            },
+            "require": {
+                "composer/satis": "^1.0"
+            },
+            "type": "project",
+            "scripts": {
+                "satis": [
+                    "./vendor/composer/satis/bin/satis"
+                ],
+                "build": [
+                    "php -dmemory_limit=-1 ./vendor/composer/satis/bin/satis build ./satis.json ./dist"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "Bluehost Satis Repository",
+            "support": {
+                "source": "https://github.com/bluehost/satis/tree/master",
+                "issues": "https://github.com/bluehost/satis/issues"
+            },
+            "time": "2020-04-17T17:25:55+00:00"
+        },
+        {
+            "name": "bluehost/wp-php-standards",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bluehost/wp-php-standards.git",
+                "reference": "33f395f94341487c52c26a6b790f635bebe6ee8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bluehost/wp-php-standards/zipball/33f395f94341487c52c26a6b790f635bebe6ee8d",
+                "reference": "33f395f94341487c52c26a6b790f635bebe6ee8d",
+                "shasum": ""
+            },
+            "require": {
+                "dealerdirect/phpcodesniffer-composer-installer": "@stable",
+                "phpcompatibility/phpcompatibility-wp": "@stable",
+                "squizlabs/php_codesniffer": "@stable",
+                "wp-coding-standards/wpcs": "@stable"
+            },
+            "type": "phpcodesniffer-standard",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "PHP Code Sniffer Standards for Bluehost WordPress projects.",
+            "support": {
+                "source": "https://github.com/bluehost/wp-php-standards/tree/master",
+                "issues": "https://github.com/bluehost/wp-php-standards/issues"
+            },
+            "time": "2020-04-15T21:20:13+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -870,6 +1634,74 @@
                 "schema"
             ],
             "time": "2019-09-25T14:49:45+00:00"
+        },
+        {
+            "name": "mojoness/mojo-marketplace-wp-plugin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mojoness/mojo-marketplace-wp-plugin.git",
+                "reference": "2276016883496275c2a696001063abea63051336"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mojoness/mojo-marketplace-wp-plugin/zipball/2276016883496275c2a696001063abea63051336",
+                "reference": "2276016883496275c2a696001063abea63051336",
+                "shasum": ""
+            },
+            "require": {
+                "bluehost/endurance-wp-module-business-reviews": "^1.0",
+                "bluehost/endurance-wp-module-gutenframe": "^0.1",
+                "bluehost/endurance-wp-module-loader": "^1.0",
+                "bluehost/endurance-wp-module-spam-prevention": "^1.0",
+                "bluehost/endurance-wp-module-sso": "^1.0",
+                "xrstf/composer-php52": "^1.0"
+            },
+            "require-dev": {
+                "bluehost/wp-php-standards": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "phpcs-config": {
+                    "colors": 1,
+                    "default_standard": "Bluehost",
+                    "testVersion": "5.2-"
+                }
+            },
+            "scripts": {
+                "lint": [
+                    "vendor/bin/phpcs --ignore=*/vendor/* ."
+                ],
+                "post-install-cmd": [
+                    "xrstf\\Composer52\\Generator::onPostInstallCmd"
+                ],
+                "post-update-cmd": [
+                    "xrstf\\Composer52\\Generator::onPostInstallCmd"
+                ],
+                "post-autoload-dump": [
+                    "xrstf\\Composer52\\Generator::onPostInstallCmd"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Hansen",
+                    "homepage": "https://mikehansen.me/"
+                },
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com",
+                    "homepage": "https://wpscholar.com"
+                }
+            ],
+            "description": "WordPress plugin that has shortcodes, widgets and themes.",
+            "support": {
+                "source": "https://github.com/mojoness/mojo-marketplace-wp-plugin",
+                "issues": "https://github.com/mojoness/mojo-marketplace-wp-plugin/issues"
+            },
+            "time": "2020-04-17T17:59:55+00:00"
         },
         {
             "name": "mustache/mustache",
@@ -2744,17 +3576,59 @@
                 "issues": "https://github.com/wpscholar-wp-plugins/wp-post-of-the-day/issues"
             },
             "time": "2020-04-21T01:18:06+00:00"
+        },
+        {
+            "name": "xrstf/composer-php52",
+            "version": "v1.0.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer-php52/composer-php52.git",
+                "reference": "bd41459d5e27df8d33057842b32377c39e97a5a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer-php52/composer-php52/zipball/bd41459d5e27df8d33057842b32377c39e97a5a8",
+                "reference": "bd41459d5e27df8d33057842b32377c39e97a5a8",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-default": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "xrstf\\Composer52": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2016-04-16T21:52:24+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "johnpbloch/wordpress": 0,
         "aaemnnosttv/wp-cli-dotenv-command": 0,
         "aaronreimann/blank-slate": 20,
+        "bluehost/bluehost-site-migrator": 20,
+        "bluehost/endurance-wp-module-business-reviews": 20,
+        "bluehost/endurance-wp-module-generator": 20,
+        "bluehost/endurance-wp-module-gutenframe": 20,
+        "bluehost/endurance-wp-module-loader": 20,
+        "bluehost/endurance-wp-module-spam-prevention": 20,
+        "bluehost/endurance-wp-module-sso": 20,
+        "bluehost/endurance-wp-plugin-updater": 20,
+        "bluehost/satis": 20,
+        "bluehost/wp-php-standards": 20,
+        "mojoness/mojo-marketplace-wp-plugin": 20,
         "rarst/laps": 0,
         "wp-cli/entity-command": 0,
         "wp-cli/wp-cli": 0,
+        "wp-forge/wp-plugin-check": 20,
         "wpackagist-plugin/airplane-mode": 0,
         "wpackagist-plugin/query-monitor": 0,
         "wpackagist-plugin/theme-check": 0,

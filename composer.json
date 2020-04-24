@@ -14,17 +14,37 @@
     "issues": "https://github.com/wp-forge/wp-site/issues"
   },
   "repositories": {
-    "satis": {
-      "type": "vcs",
-      "url": "git@github.com:wpscholar/satis.git"
-    },
     "wpackagist": {
       "type": "composer",
-      "url": "https://wpackagist.org"
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
     },
     "wpscholar": {
       "type": "composer",
-      "url": "https://wpscholar.github.io/satis/"
+      "url": "https://wpscholar.github.io/satis/",
+      "only": [
+        "aaronreimann/blank-slate",
+        "wpscholar/*"
+      ]
+    },
+    "bluehost": {
+      "type": "composer",
+      "url": "https://bluehost.github.io/satis/",
+      "only": [
+        "bluehost/*",
+        "mojoness/*"
+      ]
+    },
+    "wpscholar-satis": {
+      "type": "vcs",
+      "url": "git@github.com:wpscholar/satis.git"
+    },
+    "bluehost-satis": {
+      "type": "vcs",
+      "url": "git@github.com:bluehost/satis.git"
     }
   },
   "require": {
@@ -52,15 +72,28 @@
     "ext-xmlreader": "*",
     "ext-zlib": "*",
     "composer/installers": "^1.9",
-    "johnpbloch/wordpress": "@stable",
+    "johnpbloch/wordpress": "^5.4",
+    "wpscholar/phpcs-standards-wpscholar": "^1.0",
     "wpscholar/phpdotenv": "^1.0"
   },
   "require-dev": {
     "aaemnnosttv/wp-cli-dotenv-command": "@stable",
     "aaronreimann/blank-slate": "@dev",
+    "bluehost/bluehost-site-migrator": "@dev",
+    "bluehost/endurance-wp-module-business-reviews": "@dev",
+    "bluehost/endurance-wp-module-generator": "@dev",
+    "bluehost/endurance-wp-module-gutenframe": "@dev",
+    "bluehost/endurance-wp-module-loader": "@dev",
+    "bluehost/endurance-wp-module-spam-prevention": "@dev",
+    "bluehost/endurance-wp-module-sso": "@dev",
+    "bluehost/endurance-wp-plugin-updater": "@dev",
+    "bluehost/satis": "@dev",
+    "bluehost/wp-php-standards": "@dev",
+    "mojoness/mojo-marketplace-wp-plugin": "@dev",
     "rarst/laps": "@stable",
     "wp-cli/entity-command": "@stable",
     "wp-cli/wp-cli": "@stable",
+    "wp-forge/wp-plugin-check": "@dev",
     "wpackagist-plugin/airplane-mode": "@stable",
     "wpackagist-plugin/query-monitor": "@stable",
     "wpackagist-plugin/theme-check": "@stable",
@@ -82,6 +115,9 @@
     ],
     "notify-on-install": false,
     "preferred-install": {
+      "aaronreimann/blank-slate": "source",
+      "bluehost/*": "source",
+      "mojoness/*": "source",
       "wp-forge/*": "source",
       "wpscholar/*": "source",
       "*": "dist"

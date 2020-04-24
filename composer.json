@@ -141,6 +141,7 @@
   },
   "scripts": {
     "check": "./check.sh",
+    "clone": "./clone.sh",
     "create-users": [
       "@wp user create subscriber micah+subscriber@wpscholar.com --role=subscriber --user_pass=subscriber",
       "@wp user create contributor micah+contributor@wpscholar.com --role=contributor --user_pass=contributor",
@@ -157,6 +158,7 @@
   },
   "scripts-descriptions": {
     "check": "Recursively find all Git repositories and show any that have uncommitted changes.",
+    "clone": "Clone all non-composer repos into the mu-plugins directory, since they won't be run from there.",
     "create-users": "Create a test user for each user role (except administrator).",
     "set-salts": "Generate salts and set in .env file.",
     "wp": "WP-CLI - https://wp-cli.org/"

@@ -5,6 +5,7 @@ declare -a repos=(
     'git@github.com:bluehost/lambda-bluehost-github-release-api.git'
     'git@github.com:bluehost/lambda-bluehost-plugin-zip.git'
     'git@github.com:bluehost/lambda-bluehost-screenshot-service.git'
+    'git@github.com:wp-forge/wp-geo-query.git'
 );
 
 basePath='content/mu-plugins'

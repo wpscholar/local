@@ -1,168 +1,171 @@
 {
-  "name": "wpscholar/local",
-  "description": "My local WordPress development environment.",
-  "type": "project",
-  "license": "GPL-3.0-or-later",
-  "authors": [
-    {
-      "name": "Micah Wood",
-      "homepage": "https://wpscholar.com"
-    }
-  ],
-  "support": {
-    "source": "https://github.com/wp-forge/wp-site",
-    "issues": "https://github.com/wp-forge/wp-site/issues"
-  },
-  "repositories": {
-    "wpackagist": {
-      "type": "composer",
-      "url": "https://wpackagist.org",
-      "only": [
-        "wpackagist-plugin/*",
-        "wpackagist-theme/*"
-      ]
-    },
-    "wpscholar": {
-      "type": "composer",
-      "url": "https://wpscholar.github.io/satis/",
-      "only": [
-        "aaronreimann/blank-slate",
-        "wpscholar/*"
-      ]
-    },
-    "bluehost": {
-      "type": "composer",
-      "url": "https://bluehost.github.io/satis/",
-      "only": [
-        "bluehost/*",
-        "mojoness/*"
-      ]
-    },
-    "wpscholar-satis": {
-      "type": "vcs",
-      "url": "git@github.com:wpscholar/satis.git"
-    },
-    "bluehost-satis": {
-      "type": "vcs",
-      "url": "git@github.com:bluehost/satis.git"
-    }
-  },
-  "require": {
-    "php": ">=5.6",
-    "ext-SPL": "*",
-    "ext-SimpleXML": "*",
-    "ext-curl": "*",
-    "ext-date": "*",
-    "ext-dom": "*",
-    "ext-filter": "*",
-    "ext-ftp": "*",
-    "ext-gd": "*",
-    "ext-hash": "*",
-    "ext-iconv": "*",
-    "ext-json": "*",
-    "ext-libxml": "*",
-    "ext-mbstring": "*",
-    "ext-mysqli": "*",
-    "ext-openssl": "*",
-    "ext-pcre": "*",
-    "ext-posix": "*",
-    "ext-sockets": "*",
-    "ext-tokenizer": "*",
-    "ext-xml": "*",
-    "ext-xmlreader": "*",
-    "ext-zlib": "*",
-    "composer/installers": "^1.9",
-    "johnpbloch/wordpress": "^5.4",
-    "wpscholar/phpdotenv": "^1.0"
-  },
-  "require-dev": {
-    "aaemnnosttv/wp-cli-dotenv-command": "@stable",
-    "aaronreimann/blank-slate": "@dev",
-    "bluehost/bluehost-site-migrator": "@dev",
-    "bluehost/endurance-wp-module-business-reviews": "@dev",
-    "bluehost/endurance-wp-module-generator": "@dev",
-    "bluehost/endurance-wp-module-gutenframe": "@dev",
-    "bluehost/endurance-wp-module-loader": "@dev",
-    "bluehost/endurance-wp-module-spam-prevention": "@dev",
-    "bluehost/endurance-wp-module-sso": "@dev",
-    "bluehost/endurance-wp-plugin-updater": "@dev",
-    "bluehost/maestro-connector": "@dev",
-    "bluehost/satis": "@dev",
-    "bluehost/wp-php-standards": "@dev",
-    "mojoness/mojo-marketplace-wp-plugin": "@dev",
-    "rarst/laps": "@stable",
-    "wp-cli/entity-command": "@stable",
-    "wp-cli/wp-cli": "@stable",
-    "wp-forge/wp-plugin-check": "@dev",
-    "wpackagist-plugin/airplane-mode": "@stable",
-    "wpackagist-plugin/piglatin": "@stable",
-    "wpackagist-plugin/query-monitor": "@stable",
-    "wpackagist-plugin/theme-check": "@stable",
-    "wpackagist-plugin/user-switching": "@stable",
-    "wpackagist-plugin/wp-crontrol": "@stable",
-    "wpscholar/github-archive-installer": "@dev",
-    "wpscholar/mpress-custom-front-page": "@dev",
-    "wpscholar/mpress-hide-from-search": "@dev",
-    "wpscholar/mpress-image-refresh": "@dev",
-    "wpscholar/phpcs-standards-wpscholar": "@dev",
-    "wpscholar/random-post-on-refresh": "@dev",
-    "wpscholar/satis": "@dev",
-    "wpscholar/shortcode-scrubber": "@dev",
-    "wpscholar/simple-website-redirect": "@dev",
-    "wpscholar/stellar-places": "@dev",
-    "wpscholar/wp-post-of-the-day": "@dev"
-  },
-  "config": {
-    "github-protocols": [
-      "ssh"
+    "name": "wpscholar/local",
+    "description": "My local WordPress development environment.",
+    "type": "project",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Micah Wood",
+            "homepage": "https://wpscholar.com"
+        }
     ],
-    "notify-on-install": false,
-    "preferred-install": {
-      "aaronreimann/blank-slate": "source",
-      "bluehost/*": "source",
-      "mojoness/*": "source",
-      "wp-forge/*": "source",
-      "wpscholar/*": "source",
-      "*": "dist"
+    "support": {
+        "source": "https://github.com/wp-forge/wp-site",
+        "issues": "https://github.com/wp-forge/wp-site/issues"
     },
-    "sort-packages": true
-  },
-  "extra": {
-    "wordpress-install-dir": "wp",
-    "installer-paths": {
-      "content/mu-plugins/{$name}": [
-        "type:wordpress-muplugin"
-      ],
-      "content/plugins/{$name}": [
-        "type:wordpress-plugin"
-      ],
-      "content/themes/{$name}": [
-        "type:wordpress-theme"
-      ]
+    "repositories": {
+        "wpackagist": {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        },
+        "wpscholar": {
+            "type": "composer",
+            "url": "https://wpscholar.github.io/satis/",
+            "only": [
+                "aaronreimann/blank-slate",
+                "wpscholar/*"
+            ]
+        },
+        "bluehost": {
+            "type": "composer",
+            "url": "https://bluehost.github.io/satis/",
+            "only": [
+                "bluehost/*",
+                "mojoness/*"
+            ]
+        },
+        "wpscholar-satis": {
+            "type": "vcs",
+            "url": "git@github.com:wpscholar/satis.git"
+        },
+        "bluehost-satis": {
+            "type": "vcs",
+            "url": "git@github.com:bluehost/satis.git"
+        }
+    },
+    "require": {
+        "php": ">=5.6",
+        "ext-SPL": "*",
+        "ext-SimpleXML": "*",
+        "ext-curl": "*",
+        "ext-date": "*",
+        "ext-dom": "*",
+        "ext-filter": "*",
+        "ext-ftp": "*",
+        "ext-gd": "*",
+        "ext-hash": "*",
+        "ext-iconv": "*",
+        "ext-json": "*",
+        "ext-libxml": "*",
+        "ext-mbstring": "*",
+        "ext-mysqli": "*",
+        "ext-openssl": "*",
+        "ext-pcre": "*",
+        "ext-posix": "*",
+        "ext-sockets": "*",
+        "ext-tokenizer": "*",
+        "ext-xml": "*",
+        "ext-xmlreader": "*",
+        "ext-zlib": "*",
+        "composer/installers": "^1.9",
+        "johnpbloch/wordpress": "^5.4",
+        "wpscholar/phpdotenv": "^1.0"
+    },
+    "require-dev": {
+        "aaemnnosttv/wp-cli-dotenv-command": "@stable",
+        "bluehost/bluehost-site-migrator": "@dev",
+        "bluehost/endurance-wp-module-business-reviews": "@dev",
+        "bluehost/endurance-wp-module-generator": "@dev",
+        "bluehost/endurance-wp-module-gutenframe": "@dev",
+        "bluehost/endurance-wp-module-loader": "@dev",
+        "bluehost/endurance-wp-module-spam-prevention": "@dev",
+        "bluehost/endurance-wp-module-sso": "@dev",
+        "bluehost/endurance-wp-plugin-updater": "@dev",
+        "bluehost/maestro-connector": "@dev",
+        "bluehost/satis": "@dev",
+        "bluehost/wp-php-standards": "@dev",
+        "mojoness/mojo-marketplace-wp-plugin": "@dev",
+        "rarst/laps": "@stable",
+        "wp-blank-slate/blank-slate": "@dev",
+        "wp-blank-slate/blank-slate-pro": "@dev",
+        "wp-cli/entity-command": "@stable",
+        "wp-cli/wp-cli": "@stable",
+        "wp-forge/wp-plugin-check": "@dev",
+        "wpackagist-plugin/airplane-mode": "@stable",
+        "wpackagist-plugin/piglatin": "@stable",
+        "wpackagist-plugin/query-monitor": "@stable",
+        "wpackagist-plugin/theme-check": "@stable",
+        "wpackagist-plugin/user-switching": "@stable",
+        "wpackagist-plugin/wp-crontrol": "@stable",
+        "wpscholar/blank-slate-pro": "@dev",
+        "wpscholar/github-archive-installer": "@dev",
+        "wpscholar/mpress-custom-front-page": "@dev",
+        "wpscholar/mpress-hide-from-search": "@dev",
+        "wpscholar/mpress-image-refresh": "@dev",
+        "wpscholar/phpcs-standards-wpscholar": "@dev",
+        "wpscholar/random-post-on-refresh": "@dev",
+        "wpscholar/satis": "@dev",
+        "wpscholar/shortcode-scrubber": "@dev",
+        "wpscholar/simple-website-redirect": "@dev",
+        "wpscholar/stellar-places": "@dev",
+        "wpscholar/wp-post-of-the-day": "@dev"
+    },
+    "config": {
+        "github-protocols": [
+            "ssh"
+        ],
+        "notify-on-install": false,
+        "preferred-install": {
+            "aaronreimann/blank-slate": "source",
+            "bluehost/*": "source",
+            "mojoness/*": "source",
+            "wp-blank-slate/*": "source",
+            "wp-forge/*": "source",
+            "wpscholar/*": "source",
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "content/mu-plugins/{$name}": [
+                "type:wordpress-muplugin"
+            ],
+            "content/plugins/{$name}": [
+                "type:wordpress-plugin"
+            ],
+            "content/themes/{$name}": [
+                "type:wordpress-theme"
+            ]
+        }
+    },
+    "scripts": {
+        "check": "./check.sh",
+        "clone": "./clone.sh",
+        "create-users": [
+            "@wp user create subscriber micah+subscriber@wpscholar.com --role=subscriber --user_pass=subscriber",
+            "@wp user create contributor micah+contributor@wpscholar.com --role=contributor --user_pass=contributor",
+            "@wp user create author micah+author@wpscholar.com --role=author --user_pass=author",
+            "@wp user create editor micah+editor@wpscholar.com --role=editor --user_pass=editor"
+        ],
+        "post-create-project-cmd": [
+            "@php -r \"copy('.env.example', '.env');\"",
+            "@php -r \"unlink('.env.example');\"",
+            "@composer run set-salts"
+        ],
+        "set-salts": "@wp dotenv salts regenerate",
+        "wp": "vendor/bin/wp"
+    },
+    "scripts-descriptions": {
+        "check": "Recursively find all Git repositories and show any that have uncommitted changes.",
+        "clone": "Clone all non-composer repos into the mu-plugins directory, since they won't be run from there.",
+        "create-users": "Create a test user for each user role (except administrator).",
+        "set-salts": "Generate salts and set in .env file.",
+        "wp": "WP-CLI - https://wp-cli.org/"
     }
-  },
-  "scripts": {
-    "check": "./check.sh",
-    "clone": "./clone.sh",
-    "create-users": [
-      "@wp user create subscriber micah+subscriber@wpscholar.com --role=subscriber --user_pass=subscriber",
-      "@wp user create contributor micah+contributor@wpscholar.com --role=contributor --user_pass=contributor",
-      "@wp user create author micah+author@wpscholar.com --role=author --user_pass=author",
-      "@wp user create editor micah+editor@wpscholar.com --role=editor --user_pass=editor"
-    ],
-    "post-create-project-cmd": [
-      "@php -r \"copy('.env.example', '.env');\"",
-      "@php -r \"unlink('.env.example');\"",
-      "@composer run set-salts"
-    ],
-    "set-salts": "@wp dotenv salts regenerate",
-    "wp": "vendor/bin/wp"
-  },
-  "scripts-descriptions": {
-    "check": "Recursively find all Git repositories and show any that have uncommitted changes.",
-    "clone": "Clone all non-composer repos into the mu-plugins directory, since they won't be run from there.",
-    "create-users": "Create a test user for each user role (except administrator).",
-    "set-salts": "Generate salts and set in .env file.",
-    "wp": "WP-CLI - https://wp-cli.org/"
-  }
 }

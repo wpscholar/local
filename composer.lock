@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1aa3baf115f81497152731177459ca66",
+    "content-hash": "596105447d7560dc7805cdb00b216ed6",
     "packages": [
         {
             "name": "composer/installers",
@@ -135,20 +135,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.4.0",
+            "version": "5.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "6cec3b5d82e24c3fa565d725925afb63f116c584"
+                "reference": "2cdacd2a14c9960bcd86d8b4d7b1f211b3e77684"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/6cec3b5d82e24c3fa565d725925afb63f116c584",
-                "reference": "6cec3b5d82e24c3fa565d725925afb63f116c584",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/2cdacd2a14c9960bcd86d8b4d7b1f211b3e77684",
+                "reference": "2cdacd2a14c9960bcd86d8b4d7b1f211b3e77684",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.4.0",
+                "johnpbloch/wordpress-core": "5.4.1",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.6.20"
             },
@@ -170,27 +170,27 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2020-03-31T20:17:18+00:00"
+            "time": "2020-04-29T19:02:59+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.4.0",
+            "version": "5.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "9a9941fcad81015507e6d03801aebc51296baf37"
+                "reference": "4639993365dbb3c935d420df22f84c136d9ef4d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/9a9941fcad81015507e6d03801aebc51296baf37",
-                "reference": "9a9941fcad81015507e6d03801aebc51296baf37",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/4639993365dbb3c935d420df22f84c136d9ef4d1",
+                "reference": "4639993365dbb3c935d420df22f84c136d9ef4d1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.4.0"
+                "wordpress/core-implementation": "5.4.1"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -210,7 +210,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2020-03-31T20:17:13+00:00"
+            "time": "2020-04-29T19:02:53+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -404,63 +404,17 @@
             "time": "2018-05-21T06:56:59+00:00"
         },
         {
-            "name": "aaronreimann/blank-slate",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aaronreimann/blank-slate.git",
-                "reference": "49185598a187e90c3a8207e50ce69fa443ab0680"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aaronreimann/blank-slate/zipball/49185598a187e90c3a8207e50ce69fa443ab0680",
-                "reference": "49185598a187e90c3a8207e50ce69fa443ab0680",
-                "shasum": ""
-            },
-            "require-dev": {
-                "wpscholar/phpcs-standards-wpscholar": "@stable"
-            },
-            "type": "wordpress-plugin",
-            "scripts": {
-                "fix": [
-                    "vendor/bin/phpcbf . -s"
-                ],
-                "lint": [
-                    "vendor/bin/phpcs . -s"
-                ]
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Aaron Reimann",
-                    "homepage": "https://aaronreimann.com/"
-                },
-                {
-                    "name": "Micah Wood",
-                    "homepage": "http://wpscholar.com"
-                }
-            ],
-            "description": "Provides a blank page template for use with WordPress page builders.",
-            "support": {
-                "source": "https://github.com/aaronreimann/blank-slate/tree/1.1.5",
-                "issues": "https://github.com/aaronreimann/blank-slate/issues"
-            },
-            "time": "2020-04-21T15:51:47+00:00"
-        },
-        {
             "name": "bluehost/bluehost-site-migrator",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bluehost/bluehost-site-migrator.git",
-                "reference": "4e05e7bfa2aa2b438162b6ae1e460696627043a7"
+                "reference": "c0a8eaca00c7725bb8ad984cd621b788672314c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bluehost/bluehost-site-migrator/zipball/4e05e7bfa2aa2b438162b6ae1e460696627043a7",
-                "reference": "4e05e7bfa2aa2b438162b6ae1e460696627043a7",
+                "url": "https://api.github.com/repos/bluehost/bluehost-site-migrator/zipball/c0a8eaca00c7725bb8ad984cd621b788672314c8",
+                "reference": "c0a8eaca00c7725bb8ad984cd621b788672314c8",
                 "shasum": ""
             },
             "require": {
@@ -493,7 +447,7 @@
                 "source": "https://github.com/bluehost/bluehost-site-migrator/tree/master",
                 "issues": "https://github.com/bluehost/bluehost-site-migrator/issues"
             },
-            "time": "2020-04-24T00:10:21+00:00"
+            "time": "2020-04-24T13:58:42+00:00"
         },
         {
             "name": "bluehost/endurance-wp-module-business-reviews",
@@ -734,12 +688,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bluehost/endurance-wp-plugin-updater.git",
-                "reference": "3a041ee242eacf93c884c7a709ccf8ffeeeffeac"
+                "reference": "71c9683662b2889c85c788c0b0a8a34c222710b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bluehost/endurance-wp-plugin-updater/zipball/3a041ee242eacf93c884c7a709ccf8ffeeeffeac",
-                "reference": "3a041ee242eacf93c884c7a709ccf8ffeeeffeac",
+                "url": "https://api.github.com/repos/bluehost/endurance-wp-plugin-updater/zipball/71c9683662b2889c85c788c0b0a8a34c222710b1",
+                "reference": "71c9683662b2889c85c788c0b0a8a34c222710b1",
                 "shasum": ""
             },
             "require": {
@@ -764,7 +718,7 @@
                 "source": "https://github.com/bluehost/endurance-wp-plugin-updater/tree/master",
                 "issues": "https://github.com/bluehost/endurance-wp-plugin-updater/issues"
             },
-            "time": "2020-04-15T20:21:26+00:00"
+            "time": "2020-04-24T16:25:03+00:00"
         },
         {
             "name": "bluehost/maestro-connector",
@@ -819,12 +773,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bluehost/satis.git",
-                "reference": "d554c5ebdea419e4e22eb54fc12abf890227302d"
+                "reference": "7d4cb691d0ea297731f2ff164a0ceef315497d96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bluehost/satis/zipball/d554c5ebdea419e4e22eb54fc12abf890227302d",
-                "reference": "d554c5ebdea419e4e22eb54fc12abf890227302d",
+                "url": "https://api.github.com/repos/bluehost/satis/zipball/7d4cb691d0ea297731f2ff164a0ceef315497d96",
+                "reference": "7d4cb691d0ea297731f2ff164a0ceef315497d96",
                 "shasum": ""
             },
             "require": {
@@ -853,7 +807,7 @@
                 "source": "https://github.com/bluehost/satis/tree/master",
                 "issues": "https://github.com/bluehost/satis/issues"
             },
-            "time": "2020-04-24T00:11:34+00:00"
+            "time": "2020-04-28T16:35:07+00:00"
         },
         {
             "name": "bluehost/wp-php-standards",
@@ -1975,20 +1929,20 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.7.2",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "e2e5d290e4d2a4f0eb449f510071392e00e10d19"
+                "reference": "ff2aa5420bfbc296cf6a0bc785fa5b35736de7c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/e2e5d290e4d2a4f0eb449f510071392e00e10d19",
-                "reference": "e2e5d290e4d2a4f0eb449f510071392e00e10d19",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/ff2aa5420bfbc296cf6a0bc785fa5b35736de7c1",
+                "reference": "ff2aa5420bfbc296cf6a0bc785fa5b35736de7c1",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3 || ^7.0"
+                "php": "^5.3 || ^7.0 || ^8.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
@@ -2020,7 +1974,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2019-10-24T14:27:39+00:00"
+            "time": "2020-04-30T19:05:18+00:00"
         },
         {
             "name": "seld/phar-utils",
@@ -2119,7 +2073,7 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.39",
+            "version": "v3.4.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -2191,7 +2145,7 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v4.4.7",
+            "version": "v4.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
@@ -2247,16 +2201,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v5.0.7",
+            "version": "v5.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "ca3b87dd09fff9b771731637f5379965fbfab420"
+                "reference": "7cd0dafc4353a0f62e307df90b48466379c8cc91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/ca3b87dd09fff9b771731637f5379965fbfab420",
-                "reference": "ca3b87dd09fff9b771731637f5379965fbfab420",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/7cd0dafc4353a0f62e307df90b48466379c8cc91",
+                "reference": "7cd0dafc4353a0f62e307df90b48466379c8cc91",
                 "shasum": ""
             },
             "require": {
@@ -2293,11 +2247,11 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2020-03-27T16:56:45+00:00"
+            "time": "2020-04-12T14:40:17+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v5.0.7",
+            "version": "v5.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -2463,16 +2417,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v5.0.7",
+            "version": "v5.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "c5ca4a0fc16a0c888067d43fbcfe1f8a53d8e70e"
+                "reference": "3179f68dff5bad14d38c4114a1dab98030801fd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/c5ca4a0fc16a0c888067d43fbcfe1f8a53d8e70e",
-                "reference": "c5ca4a0fc16a0c888067d43fbcfe1f8a53d8e70e",
+                "url": "https://api.github.com/repos/symfony/process/zipball/3179f68dff5bad14d38c4114a1dab98030801fd7",
+                "reference": "3179f68dff5bad14d38c4114a1dab98030801fd7",
                 "shasum": ""
             },
             "require": {
@@ -2508,7 +2462,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2020-03-27T16:56:45+00:00"
+            "time": "2020-04-15T15:59:10+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -2570,7 +2524,7 @@
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v4.4.7",
+            "version": "v4.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
@@ -2682,6 +2636,90 @@
                 "templating"
             ],
             "time": "2020-02-11T15:31:23+00:00"
+        },
+        {
+            "name": "wp-blank-slate/blank-slate",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-blank-slate/blank-slate.git",
+                "reference": "da3a120c247eab699327a0cc318dbda32b596ac6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-blank-slate/blank-slate/zipball/da3a120c247eab699327a0cc318dbda32b596ac6",
+                "reference": "da3a120c247eab699327a0cc318dbda32b596ac6",
+                "shasum": ""
+            },
+            "require-dev": {
+                "wp-cli/i18n-command": "^2.2",
+                "wp-cli/wp-cli": "^2.4",
+                "wpscholar/phpcs-standards-wpscholar": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Aaron Reimann",
+                    "homepage": "https://aaronreimann.com/"
+                },
+                {
+                    "name": "Micah Wood",
+                    "homepage": "http://wpscholar.com"
+                }
+            ],
+            "description": "Provides a blank page template for use with WordPress page builders.",
+            "time": "2020-05-02T15:56:13+00:00"
+        },
+        {
+            "name": "wp-blank-slate/blank-slate-pro",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:wp-blank-slate/blank-slate-pro.git",
+                "reference": "9f32e6a10e6b679d599922967b318da5f5509063"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-blank-slate/blank-slate-pro/zipball/9f32e6a10e6b679d599922967b318da5f5509063",
+                "reference": "9f32e6a10e6b679d599922967b318da5f5509063",
+                "shasum": ""
+            },
+            "require-dev": {
+                "wp-cli/i18n-command": "^2.2",
+                "wp-cli/wp-cli": "^2.4",
+                "wpscholar/phpcs-standards-wpscholar": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "scripts": {
+                "fix": [
+                    "vendor/bin/phpcbf . --standard=WPScholar"
+                ],
+                "i18n": [
+                    "vendor/bin/wp i18n make-pot . ./languages/blank-slate-pro.pot --headers='{\"Report-Msgid-Bugs-To\":\"https://github.com/wp-blank-slate/blank-slate-pro/issues\",\"POT-Creation-Date\":null}'"
+                ],
+                "lint": [
+                    "vendor/bin/phpcs . --standard=WPScholar -s"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "Provides a blank page template for use with WordPress page builders.",
+            "support": {
+                "source": "https://github.com/wp-blank-slate/blank-slate-pro",
+                "issues": "https://github.com/wp-blank-slate/blank-slate-pro/issues"
+            },
+            "time": "2020-05-02T15:53:26+00:00"
         },
         {
             "name": "wp-cli/entity-command",
@@ -3219,15 +3257,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-crontrol",
-            "version": "1.8.2",
+            "version": "1.8.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-crontrol/",
-                "reference": "tags/1.8.2"
+                "reference": "tags/1.8.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.8.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.8.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -3236,8 +3274,38 @@
             "homepage": "https://wordpress.org/plugins/wp-crontrol/"
         },
         {
+            "name": "wpscholar/blank-slate-pro",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:wpscholar/blank-slate-pro.git",
+                "reference": "9c9ef0fb1c69a24b10f555eb6ad03b6325e2c56c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wpscholar/blank-slate-pro/zipball/9c9ef0fb1c69a24b10f555eb6ad03b6325e2c56c",
+                "reference": "9c9ef0fb1c69a24b10f555eb6ad03b6325e2c56c",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/wpscholar/blank-slate-pro/tree/master",
+                "issues": "https://github.com/wpscholar/blank-slate-pro/issues"
+            },
+            "time": "2020-05-01T14:03:11+00:00"
+        },
+        {
             "name": "wpscholar/github-archive-installer",
-            "version": "1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpscholar/github-archive-installer.git",
@@ -3402,16 +3470,16 @@
         },
         {
             "name": "wpscholar/phpcs-standards-wpscholar",
-            "version": "1.0.4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpscholar/phpcs-standards-wpscholar.git",
-                "reference": "fbbd2ff7ef5e39ca73df01f5cc02b747efc739ad"
+                "reference": "5c5ef21d67447ab75d37c66819d9ec128e5c922f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpscholar/phpcs-standards-wpscholar/zipball/fbbd2ff7ef5e39ca73df01f5cc02b747efc739ad",
-                "reference": "fbbd2ff7ef5e39ca73df01f5cc02b747efc739ad",
+                "url": "https://api.github.com/repos/wpscholar/phpcs-standards-wpscholar/zipball/5c5ef21d67447ab75d37c66819d9ec128e5c922f",
+                "reference": "5c5ef21d67447ab75d37c66819d9ec128e5c922f",
                 "shasum": ""
             },
             "require": {
@@ -3433,7 +3501,7 @@
                 }
             ],
             "description": "PHP Code Sniffer Standards for WP Scholar",
-            "time": "2019-04-30T20:59:44+00:00"
+            "time": "2019-06-03T22:41:05+00:00"
         },
         {
             "name": "wpscholar/random-post-on-refresh",
@@ -3483,12 +3551,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpscholar/satis.git",
-                "reference": "6c5da8c8ede52ed282ac9602ad0396408a870bd6"
+                "reference": "5ce2ee153c73eaebb3dbc821449fc66214318317"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpscholar/satis/zipball/6c5da8c8ede52ed282ac9602ad0396408a870bd6",
-                "reference": "6c5da8c8ede52ed282ac9602ad0396408a870bd6",
+                "url": "https://api.github.com/repos/wpscholar/satis/zipball/5ce2ee153c73eaebb3dbc821449fc66214318317",
+                "reference": "5ce2ee153c73eaebb3dbc821449fc66214318317",
                 "shasum": ""
             },
             "require": {
@@ -3517,7 +3585,7 @@
                 "source": "https://github.com/wpscholar/satis/tree/master",
                 "issues": "https://github.com/wpscholar/satis/issues"
             },
-            "time": "2020-04-21T03:21:44+00:00"
+            "time": "2020-05-02T15:58:46+00:00"
         },
         {
             "name": "wpscholar/shortcode-scrubber",
@@ -3615,12 +3683,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpscholar-wp-plugins/stellar-places.git",
-                "reference": "7a60572e06c90efcbad384b9a24669bf290d1237"
+                "reference": "ef1b069a98886dbb686978130fb6864d5712ce68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpscholar-wp-plugins/stellar-places/zipball/7a60572e06c90efcbad384b9a24669bf290d1237",
-                "reference": "7a60572e06c90efcbad384b9a24669bf290d1237",
+                "url": "https://api.github.com/repos/wpscholar-wp-plugins/stellar-places/zipball/ef1b069a98886dbb686978130fb6864d5712ce68",
+                "reference": "ef1b069a98886dbb686978130fb6864d5712ce68",
                 "shasum": ""
             },
             "require": {
@@ -3652,7 +3720,7 @@
                 "source": "https://github.com/wpscholar-wp-plugins/stellar-places/tree/master",
                 "issues": "https://github.com/wpscholar-wp-plugins/stellar-places/issues"
             },
-            "time": "2020-04-21T03:10:52+00:00"
+            "time": "2020-05-02T15:04:28+00:00"
         },
         {
             "name": "wpscholar/url",
@@ -3766,7 +3834,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "aaemnnosttv/wp-cli-dotenv-command": 0,
-        "aaronreimann/blank-slate": 20,
         "bluehost/bluehost-site-migrator": 20,
         "bluehost/endurance-wp-module-business-reviews": 20,
         "bluehost/endurance-wp-module-generator": 20,
@@ -3780,6 +3847,8 @@
         "bluehost/wp-php-standards": 20,
         "mojoness/mojo-marketplace-wp-plugin": 20,
         "rarst/laps": 0,
+        "wp-blank-slate/blank-slate": 20,
+        "wp-blank-slate/blank-slate-pro": 20,
         "wp-cli/entity-command": 0,
         "wp-cli/wp-cli": 0,
         "wp-forge/wp-plugin-check": 20,
@@ -3789,6 +3858,7 @@
         "wpackagist-plugin/theme-check": 0,
         "wpackagist-plugin/user-switching": 0,
         "wpackagist-plugin/wp-crontrol": 0,
+        "wpscholar/blank-slate-pro": 20,
         "wpscholar/github-archive-installer": 20,
         "wpscholar/mpress-custom-front-page": 20,
         "wpscholar/mpress-hide-from-search": 20,

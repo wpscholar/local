@@ -1,0 +1,25 @@
+{
+    "name": "wpscholar-local",
+    "version": "1.0.0",
+    "description": "My local WordPress development environment.",
+    "main": "functions.js",
+    "scripts": {
+        "check": "node -e 'require(\"./scripts\").check()'",
+        "clone": "node -e 'require(\"./scripts\").clone()'",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wpscholar/local.git"
+    },
+    "author": "Micah Wood <micah@wpscholar.com> (https://wpscholar.com)",
+    "license": "GPL-2.0-or-later",
+    "bugs": {
+        "url": "https://github.com/wpscholar/local/issues"
+    },
+    "homepage": "https://github.com/wpscholar/local#readme",
+    "devDependencies": {
+        "chalk": "^4.0.0",
+        "glob": "^7.1.6"
+    }
+}

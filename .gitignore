@@ -8,6 +8,9 @@
 # Composer
 /vendor
 
+# Node
+/node_modules
+
 # WordPress
 /wp
 

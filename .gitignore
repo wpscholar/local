@@ -11,6 +11,9 @@
 # Node
 /node_modules
 
+# Libraries
+/content/libraries
+
 # WordPress
 /wp
 

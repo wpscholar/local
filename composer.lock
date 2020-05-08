@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "596105447d7560dc7805cdb00b216ed6",
+    "content-hash": "626f075168443fc2a046631aa99bffaa",
     "packages": [
         {
             "name": "composer/installers",
@@ -768,48 +768,6 @@
             "time": "2020-04-27T15:09:37+00:00"
         },
         {
-            "name": "bluehost/satis",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bluehost/satis.git",
-                "reference": "7d4cb691d0ea297731f2ff164a0ceef315497d96"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bluehost/satis/zipball/7d4cb691d0ea297731f2ff164a0ceef315497d96",
-                "reference": "7d4cb691d0ea297731f2ff164a0ceef315497d96",
-                "shasum": ""
-            },
-            "require": {
-                "composer/satis": "^1.0"
-            },
-            "type": "project",
-            "scripts": {
-                "satis": [
-                    "./vendor/composer/satis/bin/satis"
-                ],
-                "build": [
-                    "php -dmemory_limit=-1 ./vendor/composer/satis/bin/satis build ./satis.json ./dist"
-                ]
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Micah Wood",
-                    "email": "micah@wpscholar.com"
-                }
-            ],
-            "description": "Bluehost Satis Repository",
-            "support": {
-                "source": "https://github.com/bluehost/satis/tree/master",
-                "issues": "https://github.com/bluehost/satis/issues"
-            },
-            "time": "2020-04-28T16:35:07+00:00"
-        },
-        {
             "name": "bluehost/wp-php-standards",
             "version": "dev-master",
             "source": {
@@ -1507,6 +1465,48 @@
                 "templating"
             ],
             "time": "2019-11-23T21:40:31+00:00"
+        },
+        {
+            "name": "oomphinc/composer-installers-extender",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oomphinc/composer-installers-extender.git",
+                "reference": "ca1c4b16b0905c81d1e77e608f36a2eff1a56f56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oomphinc/composer-installers-extender/zipball/ca1c4b16b0905c81d1e77e608f36a2eff1a56f56",
+                "reference": "ca1c4b16b0905c81d1e77e608f36a2eff1a56f56",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "composer/installers": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "OomphInc\\ComposerInstallersExtender\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "OomphInc\\ComposerInstallersExtender\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Beemsterboer",
+                    "email": "stephen@oomphinc.com",
+                    "homepage": "https://github.com/balbuf"
+                }
+            ],
+            "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
+            "homepage": "http://www.oomphinc.com/",
+            "time": "2017-03-31T16:57:39+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
@@ -3546,48 +3546,6 @@
             "time": "2020-04-21T03:29:30+00:00"
         },
         {
-            "name": "wpscholar/satis",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wpscholar/satis.git",
-                "reference": "5ce2ee153c73eaebb3dbc821449fc66214318317"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wpscholar/satis/zipball/5ce2ee153c73eaebb3dbc821449fc66214318317",
-                "reference": "5ce2ee153c73eaebb3dbc821449fc66214318317",
-                "shasum": ""
-            },
-            "require": {
-                "composer/satis": "^1.0"
-            },
-            "type": "library",
-            "scripts": {
-                "satis": [
-                    "./vendor/composer/satis/bin/satis"
-                ],
-                "build": [
-                    "php -dmemory_limit=-1 ./vendor/composer/satis/bin/satis build ./satis.json ./dist"
-                ]
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Micah Wood",
-                    "homepage": "https://wpscholar.com"
-                }
-            ],
-            "description": "WP Scholar Composer repository",
-            "support": {
-                "source": "https://github.com/wpscholar/satis/tree/master",
-                "issues": "https://github.com/wpscholar/satis/issues"
-            },
-            "time": "2020-05-02T15:58:46+00:00"
-        },
-        {
             "name": "wpscholar/shortcode-scrubber",
             "version": "dev-master",
             "source": {
@@ -3843,7 +3801,6 @@
         "bluehost/endurance-wp-module-sso": 20,
         "bluehost/endurance-wp-plugin-updater": 20,
         "bluehost/maestro-connector": 20,
-        "bluehost/satis": 20,
         "bluehost/wp-php-standards": 20,
         "mojoness/mojo-marketplace-wp-plugin": 20,
         "rarst/laps": 0,
@@ -3865,7 +3822,6 @@
         "wpscholar/mpress-image-refresh": 20,
         "wpscholar/phpcs-standards-wpscholar": 20,
         "wpscholar/random-post-on-refresh": 20,
-        "wpscholar/satis": 20,
         "wpscholar/shortcode-scrubber": 20,
         "wpscholar/simple-website-redirect": 20,
         "wpscholar/stellar-places": 20,

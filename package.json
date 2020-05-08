@@ -4,8 +4,8 @@
     "description": "My local WordPress development environment.",
     "main": "functions.js",
     "scripts": {
-        "check": "node -e 'require(\"./scripts\").check()'",
-        "clone": "node -e 'require(\"./scripts\").clone()'",
+        "check": "node -e 'require(\"./scripts/scripts.js\").check()'",
+        "clone": "node -e 'require(\"./scripts/scripts.js\").clone()'",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {

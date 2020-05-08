@@ -1,6 +1,6 @@
 const chalk = require('chalk');
 const {execSync} = require('child_process');
-const {existsSync, lstatSync} = require('fs');
+const {existsSync, lstatSync, mkdirSync} = require('fs');
 const glob = require('glob');
 
 /**
@@ -45,9 +45,17 @@ function gitClone(repo, path) {
  * @param {array} repos
  */
 function gitCloneAll(dir, repos) {
-	const existingRepos = getPaths('content/*(mu-plugins|plugins|themes)/*/.git/')
+	if (!existsSync(dir)) {
+		mkdirSync(dir, {mode: '0755', recursive: true});
+	}
+
+	const existingRepos = getPaths(`${dir}/*/.git/`, {dot: true})
 		.map(path => path.slice(0, -6))
 		.map(path => fetchGitOriginUrl(path));
+
+	const start = dir.indexOf('/local/') + 7;
+
+	console.log(chalk.magenta(`/${dir.slice(start)}`));
 
 	repos.forEach(repo => {
 		const packageName = gitUrlToPackageName(repo);

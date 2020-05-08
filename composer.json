@@ -86,9 +86,9 @@
         "bluehost/endurance-wp-module-sso": "@dev",
         "bluehost/endurance-wp-plugin-updater": "@dev",
         "bluehost/maestro-connector": "@dev",
-        "bluehost/satis": "@dev",
         "bluehost/wp-php-standards": "@dev",
         "mojoness/mojo-marketplace-wp-plugin": "@dev",
+        "oomphinc/composer-installers-extender": "^1.1",
         "rarst/laps": "@stable",
         "wp-blank-slate/blank-slate": "@dev",
         "wp-blank-slate/blank-slate-pro": "@dev",
@@ -108,7 +108,6 @@
         "wpscholar/mpress-image-refresh": "@dev",
         "wpscholar/phpcs-standards-wpscholar": "@dev",
         "wpscholar/random-post-on-refresh": "@dev",
-        "wpscholar/satis": "@dev",
         "wpscholar/shortcode-scrubber": "@dev",
         "wpscholar/simple-website-redirect": "@dev",
         "wpscholar/stellar-places": "@dev",
@@ -145,8 +144,7 @@
         }
     },
     "scripts": {
-        "check": "./check.sh",
-        "clone": "./clone.sh",
+        "check": "./scripts/check.sh",
         "create-users": [
             "@wp user create subscriber micah+subscriber@wpscholar.com --role=subscriber --user_pass=subscriber",
             "@wp user create contributor micah+contributor@wpscholar.com --role=contributor --user_pass=contributor",
@@ -163,7 +161,6 @@
     },
     "scripts-descriptions": {
         "check": "Recursively find all Git repositories and show any that have uncommitted changes.",
-        "clone": "Clone all non-composer repos into the mu-plugins directory, since they won't be run from there.",
         "create-users": "Create a test user for each user role (except administrator).",
         "set-salts": "Generate salts and set in .env file.",
         "wp": "WP-CLI - https://wp-cli.org/"

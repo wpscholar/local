@@ -39,3 +39,6 @@ wp-cli.local.yml
 
 # dotEnv Configuration
 .env
+
+# Log Files
+*.log

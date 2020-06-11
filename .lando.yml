@@ -1,0 +1,8 @@
+name: local
+recipe: wordpress
+config:
+  php: '7.3'
+  via: apache
+  webroot: .
+  database: mysql
+  xdebug: true

@@ -10,7 +10,8 @@
     ],
     "libraries/wp-forge": [
         "git@github.com:wp-forge/.github.git",
-        "git@github.com:wp-forge/wp-geo-query.git"
+        "git@github.com:wp-forge/wp-geo-query.git",
+        "git@github.com:wp-forge/wp-upgrade-handler.git"
     ],
     "libraries/wpscholar": [
         "git@github.com:wpscholar/satis.git"

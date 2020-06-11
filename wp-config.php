@@ -37,7 +37,7 @@ $loader
 	->set( 'DISALLOW_FILE_EDIT', true );
 
 // Ensure that we don't cause trouble when running WP-CLI.
-if( isset( $_SERVER['HTTP_HOST'] ) ) {
+if ( isset( $_SERVER['HTTP_HOST'] ) ) {
 	$loader
 		->set( 'WP_HOME', $scheme . '://' . $_SERVER['HTTP_HOST'] )
 		->set( 'WP_SITEURL', $loader->get( 'WP_HOME' ) . '/wp' )

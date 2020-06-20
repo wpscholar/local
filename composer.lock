@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "626f075168443fc2a046631aa99bffaa",
+    "content-hash": "9ce41d5187118bbf83f83041eb4c688b",
     "packages": [
         {
             "name": "composer/installers",
@@ -1038,48 +1038,6 @@
                 "templating"
             ],
             "time": "2019-11-23T21:40:31+00:00"
-        },
-        {
-            "name": "oomphinc/composer-installers-extender",
-            "version": "v1.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oomphinc/composer-installers-extender.git",
-                "reference": "ca1c4b16b0905c81d1e77e608f36a2eff1a56f56"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oomphinc/composer-installers-extender/zipball/ca1c4b16b0905c81d1e77e608f36a2eff1a56f56",
-                "reference": "ca1c4b16b0905c81d1e77e608f36a2eff1a56f56",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0",
-                "composer/installers": "^1.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "OomphInc\\ComposerInstallersExtender\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "OomphInc\\ComposerInstallersExtender\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Stephen Beemsterboer",
-                    "email": "stephen@oomphinc.com",
-                    "homepage": "https://github.com/balbuf"
-                }
-            ],
-            "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
-            "homepage": "http://www.oomphinc.com/",
-            "time": "2017-03-31T16:57:39+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
@@ -2158,6 +2116,42 @@
             "time": "2020-05-13T23:57:56+00:00"
         },
         {
+            "name": "wp-forge/container",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-forge/container.git",
+                "reference": "e76a208d048b163dcb23068b149e16bdcfabc901"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-forge/container/zipball/e76a208d048b163dcb23068b149e16bdcfabc901",
+                "reference": "e76a208d048b163dcb23068b149e16bdcfabc901",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WP_Forge\\Container\\": "includes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "A lightweight, PHP 5.4+ compatible, PSR-11 dependency injection container.",
+            "time": "2020-03-22T22:42:37+00:00"
+        },
+        {
             "name": "wp-forge/wp-geo-query",
             "version": "1.0",
             "source": {
@@ -2228,6 +2222,39 @@
             ],
             "description": "Check if a WordPress plugin is compatible with the current environment.",
             "time": "2020-04-20T16:55:41+00:00"
+        },
+        {
+            "name": "wp-forge/wp-upgrade-handler",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-forge/wp-upgrade-handler.git",
+                "reference": "b0a7f4c66710f95b4c5702fea3af505ea72fb215"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-forge/wp-upgrade-handler/zipball/b0a7f4c66710f95b4c5702fea3af505ea72fb215",
+                "reference": "b0a7f4c66710f95b4c5702fea3af505ea72fb215",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WP_Forge\\UpgradeHandler\\": "includes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Micah Wood",
+                    "email": "micah@wpscholar.com"
+                }
+            ],
+            "description": "A drop-in library for handling upgrade routines in WordPress plugins and themes.",
+            "time": "2020-05-21T00:04:44+00:00"
         },
         {
             "name": "wpackagist-plugin/airplane-mode",
@@ -2338,36 +2365,6 @@
             "homepage": "https://wordpress.org/plugins/wp-crontrol/"
         },
         {
-            "name": "wpscholar/blank-slate-pro",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:wpscholar/blank-slate-pro.git",
-                "reference": "9c9ef0fb1c69a24b10f555eb6ad03b6325e2c56c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wpscholar/blank-slate-pro/zipball/9c9ef0fb1c69a24b10f555eb6ad03b6325e2c56c",
-                "reference": "9c9ef0fb1c69a24b10f555eb6ad03b6325e2c56c",
-                "shasum": ""
-            },
-            "type": "wordpress-plugin",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Micah Wood",
-                    "email": "micah@wpscholar.com"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/wpscholar/blank-slate-pro/tree/master",
-                "issues": "https://github.com/wpscholar/blank-slate-pro/issues"
-            },
-            "time": "2020-05-01T14:03:11+00:00"
-        },
-        {
             "name": "wpscholar/github-archive-installer",
             "version": "1.1",
             "source": {
@@ -2454,21 +2451,36 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wpscholar-wp-plugins/mpress-hide-from-search.git",
-                "reference": "52d683e0ed261cd596e48592f3b8c627a7fed69a"
+                "reference": "d30f8de4de7669fc1d193fd0e00089149495e85d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wpscholar-wp-plugins/mpress-hide-from-search/zipball/52d683e0ed261cd596e48592f3b8c627a7fed69a",
-                "reference": "52d683e0ed261cd596e48592f3b8c627a7fed69a",
+                "url": "https://api.github.com/repos/wpscholar-wp-plugins/mpress-hide-from-search/zipball/d30f8de4de7669fc1d193fd0e00089149495e85d",
+                "reference": "d30f8de4de7669fc1d193fd0e00089149495e85d",
                 "shasum": ""
             },
+            "require": {
+                "wp-forge/container": "^1.0",
+                "wp-forge/wp-plugin-check": "^1.0",
+                "wp-forge/wp-upgrade-handler": "^1.0"
+            },
             "require-dev": {
-                "wpscholar/phpcs-standards-wpscholar": "@stable"
+                "wp-cli/i18n-command": "^2.2",
+                "wp-cli/wp-cli": "^2.4",
+                "wpscholar/phpcs-standards-wpscholar": "^1.0"
             },
             "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "HideFromSearch\\": "includes"
+                }
+            },
             "scripts": {
                 "fix": [
                     "vendor/bin/phpcbf . -s"
+                ],
+                "i18n": [
+                    "vendor/bin/wp i18n make-pot . ./languages/mpress-hide-from-search.pot --headers='{\"POT-Creation-Date\":null}' --exclude=tests"
                 ],
                 "lint": [
                     "vendor/bin/phpcs . -s"
@@ -2480,15 +2492,15 @@
             "authors": [
                 {
                     "name": "Micah Wood",
-                    "email": "micah@wpscholar.com"
+                    "homepage": "https://wpscholar.com"
                 }
             ],
-            "description": "Hide specific pages from WordPress search.",
+            "description": "Hide individual WordPress pages from search engines and/or WordPress search results.",
             "support": {
-                "source": "https://github.com/wpscholar-wp-plugins/mpress-hide-from-search/tree/master",
+                "source": "https://github.com/wpscholar-wp-plugins/mpress-hide-from-search",
                 "issues": "https://github.com/wpscholar-wp-plugins/mpress-hide-from-search/issues"
             },
-            "time": "2020-04-19T04:04:14+00:00"
+            "time": "2020-06-20T18:50:42+00:00"
         },
         {
             "name": "wpscholar/mpress-image-refresh",
@@ -2886,7 +2898,6 @@
         "wpackagist-plugin/theme-check": 0,
         "wpackagist-plugin/user-switching": 0,
         "wpackagist-plugin/wp-crontrol": 0,
-        "wpscholar/blank-slate-pro": 20,
         "wpscholar/github-archive-installer": 20,
         "wpscholar/mpress-custom-front-page": 20,
         "wpscholar/mpress-hide-from-search": 20,

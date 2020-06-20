@@ -20,6 +20,8 @@
     "plugins": [
         "git@github.com:bluehost/bluehost-wordpress-plugin.git",
         "git@github.com:wpscholar/bulldog-solar-hero-video.git",
+        "git@github.com:wpscholar/bulldog-solar-projects.git",
+        "git@github.com:wpscholar/legendary-recipes.git",
         "git@github.com:wpscholar/stellar-places-nearby.git"
     ],
     "themes": []

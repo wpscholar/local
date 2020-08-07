@@ -72,7 +72,8 @@
         "ext-xmlreader": "*",
         "ext-zlib": "*",
         "composer/installers": "^1.9",
-        "johnpbloch/wordpress": "^5.4",
+        "johnpbloch/wordpress": "@dev",
+        "wpackagist-plugin/woocommerce": "^4.3",
         "wpscholar/phpdotenv": "^1.0"
     },
     "require-dev": {

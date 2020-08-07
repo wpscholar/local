@@ -1,28 +1,31 @@
 {
-    "libraries/bluehost": [
-        "git@github.com:bluehost/.github.git",
-        "git@github.com:bluehost/endurance-page-cache.git",
-        "git@github.com:bluehost/lambda-bluehost-generate-screenshot.git",
-        "git@github.com:bluehost/lambda-bluehost-github-release-api.git",
-        "git@github.com:bluehost/lambda-bluehost-plugin-zip.git",
-        "git@github.com:bluehost/lambda-bluehost-screenshot-service.git",
-        "git@github.com:bluehost/satis.git"
-    ],
-    "libraries/wp-forge": [
-        "git@github.com:wp-forge/.github.git",
-        "git@github.com:wp-forge/wp-geo-query.git",
-        "git@github.com:wp-forge/wp-upgrade-handler.git"
-    ],
-    "libraries/wpscholar": [
-        "git@github.com:wpscholar/satis.git"
-    ],
-    "mu-plugins": [],
-    "plugins": [
-        "git@github.com:bluehost/bluehost-wordpress-plugin.git",
-        "git@github.com:wpscholar/bulldog-solar-hero-video.git",
-        "git@github.com:wpscholar/bulldog-solar-projects.git",
-        "git@github.com:wpscholar/legendary-recipes.git",
-        "git@github.com:wpscholar/stellar-places-nearby.git"
-    ],
-    "themes": []
+  "libraries/bluehost": [
+    "git@github.com:bluehost/.github.git",
+    "git@github.com:bluehost/endurance-page-cache.git",
+    "git@github.com:bluehost/endurance-wp-plugin-updater.git",
+    "git@github.com:bluehost/lambda-bluehost-generate-screenshot.git",
+    "git@github.com:bluehost/lambda-bluehost-github-release-api.git",
+    "git@github.com:bluehost/lambda-bluehost-plugin-zip.git",
+    "git@github.com:bluehost/lambda-bluehost-screenshot-service.git",
+    "git@github.com:bluehost/satis.git",
+    "git@github.com:bluehost/worker-bluehost-request-proxy.git"
+  ],
+  "libraries/wp-forge": [
+    "git@github.com:wp-forge/.github.git",
+    "git@github.com:wp-forge/wp-geo-query.git",
+    "git@github.com:wp-forge/wp-upgrade-handler.git"
+  ],
+  "libraries/wpscholar": [
+    "git@github.com:wpscholar/flex-fields.git",
+    "git@github.com:wpscholar/satis.git"
+  ],
+  "mu-plugins": [],
+  "plugins": [
+    "git@github.com:bluehost/bluehost-wordpress-plugin.git",
+    "git@github.com:wpscholar/bulldog-solar-hero-video.git",
+    "git@github.com:wpscholar/bulldog-solar-projects.git",
+    "git@github.com:wpscholar/legendary-recipes.git",
+    "git@github.com:wpscholar/stellar-places-nearby.git"
+  ],
+  "themes": []
 }

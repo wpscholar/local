@@ -18,6 +18,19 @@ The installation process will check your environment for the required PHP versio
 
 ## Usage
 
+### With Lando
+
+- Install [Lando](https://docs.lando.dev/basics/installation.html)
+- Run `git clone git@github.com:wpscholar/local.git` to pull down the code.
+- Run `cd local` to change into the project root directory.
+- Run `lando start` to initialize and start the containers.
+- Copy the `.env.sample` file as `.env`.
+- Run `composer install` to install required dependencies.
+- Run `lando composer run set-salts` to generate salts.
+- Import a copy of the production database using the `lando db-import <file>` command where `<file>` is the name of the SQL file you've placed in the current directory.
+- Visit [local.lndo.site](http://local.lndo.site)
+- [Trust the CA](https://docs.lando.dev/config/security.html#trusting-the-ca) (Optional)
+
 ### With Laravel Valet
 
 - Install [Homebrew](https://brew.sh/)

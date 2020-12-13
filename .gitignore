@@ -40,6 +40,10 @@ wp-cli.local.yml
 # dotEnv Configuration
 .env
 
+# Directories
+/content/cache/*
+/content/w3tc-config/*
+
 # File Types
 *.gz
 *.log

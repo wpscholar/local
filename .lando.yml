@@ -1,8 +1,68 @@
 name: local
 recipe: wordpress
+
 config:
-  php: '7.3'
-  via: apache
-  webroot: .
+  php: 7.4
+  via: nginx
   database: mysql
+  webroot: .
+  ssl: true
   xdebug: true
+#  config:
+#    php: .lando.php.ini
+
+#services:
+#  appserver:
+#    app_mount: delegated
+#    build_as_root:
+#      # https://docs.lando.dev/guides/installing-node-in-your-lando-php-service.html
+#      - curl -sL https://deb.nodesource.com/setup_12.x | bash -
+#      - apt-get install -y nodejs
+#    run_as_root:
+#      - ln -snf /usr/share/zoneinfo/America/New_York /etc/localtime
+#      - echo "America/New_York" > /etc/timezone
+#  cache:
+#    type: redis
+#    persist: true
+#    portforward: true
+#  mailhog:
+#    type: mailhog
+#    portforward: true
+#    hogfrom:
+#      - appserver
+#
+#proxy:
+#  mailhog:
+#    - mail.local.lndo.site
+
+tooling:
+#  node:
+#    service: appserver
+#  npm:
+#    service: appserver
+#  redis-cli:
+#    service: cache
+  xdebug-on:
+    service: appserver
+    description: Enable xdebug for nginx
+    cmd: docker-php-ext-enable xdebug && pkill -o -USR2 php-fpm
+    user: root
+  xdebug-off:
+    service: appserver
+    description: Disable xdebug for nginx
+    cmd: rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm
+    user: root
+
+#excludes:
+#  - .idea
+#  - .git
+
+events:
+  pre-destroy:
+    - lando db-export
+  pre-rebuild:
+    - lando db-export
+  pre-restart:
+    - lando db-export
+  pre-stop:
+    - lando db-export

@@ -30,6 +30,8 @@
   "mu-plugins": [],
   "plugins": [
     "git@github.com:bluehost/bluehost-wordpress-plugin.git",
+    "git@github.com:bluehost/bluehost-site-migrator.git",
+    "git@github.com:mojoness/mojo-marketplace-wp-plugin.git",
     "git@github.com:wpscholar/bulldog-solar-hero-video.git",
     "git@github.com:wpscholar/bulldog-solar-projects.git",
     "git@github.com:wpscholar/legendary-recipes.git",
